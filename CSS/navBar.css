@@ -1,0 +1,83 @@
+/* ----Navigation Bar-----*/
+
+.navButtons {
+    max-width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.navButtons {
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.navButtons > a , .dropbtn{
+    float: left;
+    font-size: 1.5em;
+    font-family: "tahoma";
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.page {
+	margin: 24px 0;
+	
+}
+
+.navButtons a:hover {
+    background-color: rgb(0, 137, 177);
+    color: white;
+    border-radius: 5px;
+}
+
+.active {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+.navButtons .icon{
+    display: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    margin-top: 84px;
+	margin-left: 408px;
+    min-width: 146px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+	color: white;
+	background-color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color:  rgb(36, 137, 177);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+   
+    color: white
+}
+
+.dropdown {
+	background-color: black;
+}
+

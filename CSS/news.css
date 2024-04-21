@@ -1,0 +1,64 @@
+.newstext {
+    color: black;
+    text-align: center;
+    background-color: rgb(149, 247, 230);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.ImageTitle {
+    
+    color:white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.Content-News {
+    display: inline-block;
+    overflow: auto;
+    width: 100%;
+}
+
+.Content-leftnews {
+    width: 30%;
+    float: left;
+    padding-left: 2.5%;
+    
+}
+
+.Content-middlenews {
+    width: 30%;
+    float: left;
+    padding-left: 2.5%;
+}
+
+.Content-rightnews {
+    width: 30%;
+    float: left;
+    padding-left: 2.5%;
+}
+
+.hidden {
+    display: none;
+}
+
+.Content-News a {
+    text-decoration: none;
+}
+
+.Content-News a:hover {
+    text-decoration: underline;
+    color:rgb(149, 247, 230);
+}
+
+.mrbutton {
+    
+        background-color:rgb(149, 247, 230) ;
+        color: black;
+        padding: 15px 32px;
+        font-size: 20px;
+        cursor: pointer;
+        border-radius: 10px;
+}
+
+.butoni {
+    padding-left: 27%;
+}

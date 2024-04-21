@@ -1,0 +1,79 @@
+.aboutpage {
+    text-align: center;
+    color: #FF000F
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.titull {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    
+}
+
+.aboutimg {
+    display: inline-block;
+    width: 100%;
+}
+
+.aboutimgL {
+    float: left;
+    width: 50%;
+    transform: translate(25px, 0px);
+}
+
+.aboutimgR {
+    float: left;
+    width: 50%;
+    transform: translate(-25px, 0px);
+    
+}
+
+.forma {
+    background-color: rgba(255, 255, 255, 0.3);
+    text-align:center;
+    width: 40%;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding-top: 20px;
+    
+}
+.toptext {
+    background-color: rgb(0, 255, 0);
+}
+
+
+.joinus {
+    background-color: rgb(0, 255, 0);
+    border-radius: 10px;
+    color:white;
+    margin:  auto;
+    padding: 15px 32px;
+    width: 60%;
+    
+}
+
+.submitbutton {
+    background-color: #ff0000;
+    color: white;
+    padding: 15px 32px;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+input {
+    width: 80%;
+}
+
+input[type=email] {
+    padding: 12px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  
