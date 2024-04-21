@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <title>My Picks</title>
+    <link rel="stylesheet" href="css/navBar.css">
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/standings.css">
+    <link rel="stylesheet" href="CSS/MyPicks.css">
+    <link rel="icon" href="images/logo1.png">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="JS\table.js"></script>
+    <script>
+        $(function () {
+            var order = JSON.parse(localStorage.order || "[]")
+            $.each(order, function (i, id) {
+                $("#" + id).appendTo($('#MyPicks'))
+            })
+            $('#MyPicks').sortable({
+                stop: stop,
+            });
+            function stop(e, ui) {
+                var order = $(this).children().map(function () { return this.id }).get()
+                localStorage.order = JSON.stringify(order)
+            }
+        })
+    </script>
+</head>
+
+
+<body style="background-color:rgb(0, 20, 26);">
+    <!-- -->
+    <header>
+
+
+        <nav>
+            <div class="logo">
+
+            </div>
+            <div class=" navButtons" id="myNavButtons">
+                <a href="index.html"><img height="75px" src="images\LoL Logo.png"></a>
+                <a class="page" href="index.html">HOME</a>
+                <a class="page" href="news.html">NEWS</a>
+                <a class="page" href="teams.html">TEAMS</a>
+                <div class="dropdown">
+                    <a class="dropbtn page" href="scheduleLCS.html">SCHEDULE</a>
+                    <div class="dropdown-content">
+                        <a href="scheduleLEC.html">LEC</a>
+                        <a href="scheduleLCS.html">LCS</a>
+                        <a href="scheduleLCK.html">LCK</a>
+                        <a href="scheduleLPL.html">LPL</a>
+                    </div>
+                </div>
+
+                <a class="page" href="standings.html">STANDINGS</a>
+                <a class="page" href="about.html">ABOUT</a>
+
+            </div>
+    </header>
+    
+    </tr>
+    </nav>
+    <br>
+    <div class="MyPicksContainer"> <br>
+        <div class="LeftNumbers">
+            <h2>1.</h2>
+            <h2>2.</h2>
+            <h2>3.</h2>
+            <h2>4.</h2>
+            <h2>5.</h2>
+            <h2>6.</h2>
+            <h2>7.</h2>
+            <h2>8.</h2>
+            <h2>9.</h2>
+            <h2>10.</h2>
+        </div>
+        <div class="MyPicks" id="MyPicks">
+            <div draggable="true" class="teambox" id="t1"><img src="images\LCS\100T-Logo.png"></div>
+            <div draggable="true" class="teambox" id="t2"><img src="images\LCS\C9-Logo.png"></div>
+            <div draggable="true" class="teambox" id="t3"><img src="images\LCS\TL-Logo.png"></div>
+            <div draggable="true" class="teambox" id="t4"><img src="images\LCS\CLG-Logo.png"></div>
+            <div draggable="true" class="teambox" id="t5"><img src="images\LCS\DIG-Logo.png"></div>
+            <div draggable="true" class="teambox" id="t6"><img src="images\LCS\EG-Logo.png"></div>
+            <div draggable="true" class="teambox" id="t7"><img src="images\LCS\FLY-Logo.png"></div>
+            <div draggable="true" class="teambox" id="t8"><img src="images\LCS\GG-Logo.png"></div>
+            <div draggable="true" class="teambox" id="t9"><img src="images\LCS\IMT-Logo.png"></div>
+            <div draggable="true" class="teambox" id="t10"><img src="images\LCS\TSM-Logo.png"></div>
+        </div> 
+        <div class="Righttext">
+            <h2>Overview</h2>
+            <p>Make a prediction. Pick the teams by dragging and droping them into a position that you
+                think they will end up by the end of the year.
+            </p> 
+        </div>
+        <button onclick="localStorage.clear(); window.location.reload();" class="Resetbtn">RESET PICKS</button> <br><br>
+    </div>
+    
+
+    <footer>
+        <div class="FooterClass">
+            <img height="30px" src="images/riot.png" style="float: left;">
+
+            <img height="30px" src="images/leagueoflegendssucks.png" style="float: left;">
+
+            <p style="margin-left: 85%; color: white;"> © NEXUS All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

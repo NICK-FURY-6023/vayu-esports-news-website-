@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <title>News</title>
+    <link rel="stylesheet" href="css/navBar.css">
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/news.css">
+    <link rel="icon" href="images/logo1.png">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"> </script>
+    <script>
+        $(document).on("click", ".mrbutton", function () {
+            $("#mrbutton").remove();
+            $("#hidden").attr("class", "");
+        });
+    </script>
+</head>
+
+<body style="background-color:rgb(0, 20, 26);">
+    <!-- -->
+    <header>
+
+
+        <nav>
+            <div class="logo">
+
+            </div>
+            <div class=" navButtons" id="myNavButtons">
+                <a href="index.html"><img height="75px" src="images\LoL Logo.png"></a>
+                <a class="page" href="index.html">HOME</a>
+                <a class="page" href="news.html">NEWS</a>
+                <a class="page" href="teams.html">TEAMS</a>
+                <div class="dropdown">
+                    <a class="dropbtn page" href="scheduleLEC.html">SCHEDULE</a>
+                    <div class="dropdown-content">
+                        <a href="scheduleLEC.html">LEC</a>
+                        <a href="scheduleLCS.html">LCS</a>
+                        <a href="scheduleLCK.html">LCK</a>
+                        <a href="scheduleLPL.html">LPL</a>
+                    </div>
+                </div>
+
+                <a class="page" href="standings.html">STANDINGS</a>
+                <a class="page" href="about.html">ABOUT</a>
+
+            </div>
+
+        </nav>
+    </header>
+    <br>
+    <h1 class="newstext">NEWS </h1>
+    <div class="Content-News">
+        <div class="Content-leftnews">
+            <div class="ContentBlocknews">
+                <a class="BackgroundImage" href="perkz.html" target="_blank">
+                    <img src="images/Screenshot-2020-11-12-183108.jpg" class="BackgroundImage">
+                    <Pre class="ImageTitle">LEC superstar Perkz officially joins Cloud9</Pre> <br> <br>
+                </a>
+            </div>
+            <div class="ContentBlocknews">
+                <a class="BackgroundImage" href="bjergsen.html" target="_blank">
+                    <img src="images/i.jfif" class="BackgroundImage">
+                    <Pre class="ImageTitle">Bjergsen retires from League of Legends,<br>becomes TSM head coach</Pre>
+                </a>
+            </div>
+        </div>
+        <div class="Content-middlenews">
+            <div class="ContentBlocknews">
+                <a class="BackgroundImage" href="rekkles.html" target="_blank">
+                    <img src="images/Rekkles.jpg" class="BackgroundImage">
+                    <Pre class="ImageTitle">Rekkles officially joins G2 Esports for 2021 LEC season</Pre> <br> <br>
+                </a>
+            </div>
+            <div class="ContentBlocknews">
+                <a class="BackgroundImage" href="lec2021.html" target="_blank">
+                    <img src="images/LoL_LECSummer2019-1024x683.jpg" class="BackgroundImage">
+                    <Pre class="ImageTitle">LEC Final Rosters for 2021 Season</Pre>
+                </a>
+            </div> <br> <br>
+          <div class="butoni">  <button class="mrbutton" id="mrbutton">VIEW MORE</button> </div>
+        </div>
+        <div class="Content-rightnews">
+            <div class="ContentBlocknews">
+                <a class="BackgroundImage" href="viego.html" target="_blank">
+                    <img src="images/viegos-abilities-a-full-breakdown-1610393730.jpg" class="BackgroundImage">
+                    <Pre class="ImageTitle">The release of Viego, The Ruined King</Pre> <br> <br>
+                </a>
+            </div>
+            <div class="ContentBlocknews">
+                <a class="BackgroundImage" href="wildrift.html" target="_blank">
+                    <img src="images/WR_meta_homepage.png" class="BackgroundImage">
+                    <Pre class="ImageTitle">EVERYTHING YOU NEED TO KNOW ABOUT<br>LEAGUE OF LEGENDS: WILD RIFT</Pre>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="hidden" id="hidden">
+        <div class="Content-News">
+            <div class="Content-leftnews">
+                <div class="ContentBlocknews">
+                    <a class="BackgroundImage" href="bestteams.html" target="_blank">
+                        <img src="images/damwom_LoL-Esports-Photos_cc1-900x580.jpg" class="BackgroundImage">
+                        <Pre class="ImageTitle">The 3 best League of Legends teams of 2020</Pre> <br> <br><br>
+                    </a>
+                </div>
+            </div>
+            <div class="Content-middlenews">
+                <div class="ContentBlocknews">
+                    <a class="BackgroundImage" href="griffin.html" target="_blank">
+                        <img src="images/48899370226_888872bff5_k.jpg" class="BackgroundImage">
+                        <Pre class="ImageTitle">Griffin officially disbands League of Legends team</Pre> <br> <br>
+                    </a>
+                </div>
+            </div>
+            <div class="Content-rightnews">
+                <div class="ContentBlocknews">
+                    <a class="BackgroundImage" href="promos.html" target="_blank">
+                        <img src="images/league-of-legends-header-x.jpg" class="BackgroundImage">
+                        <Pre class="ImageTitle">League of Legends removes division <br>promos as Season 11 starts</Pre>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="FooterClass">
+            <img height="30px" src="images/riot.png" style="float: left;">
+
+            <img height="30px" src="images/leagueoflegendssucks.png" style="float: left;">
+
+            <p style="margin-left: 85%; color: white;"> © NEXUS All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

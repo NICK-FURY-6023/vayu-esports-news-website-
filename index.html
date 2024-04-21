@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+
+<html lang="en" manifest="index.appcache">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="Cache-control" content="public">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/navBar.css">
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="icon" href="images/logo1.png">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+        $(document).on("click", ".morebtn", function () {
+            $("#morebtn").remove();
+            $("tbody").attr("class", "");
+
+        });
+    </script>
+</head>
+
+<body style="background-color:rgb(0, 20, 26);">
+    <!-- -->
+    <header>
+
+
+        <nav>
+            <div class="logo">
+
+            </div>
+            <div class=" navButtons" id="myNavButtons">
+                <a href="index.html"><img height="75px" src="images\LoL Logo.png"></a>
+                <a class="page" href="index.html">HOME</a>
+                <a class="page" href="news.html">NEWS</a>
+                <a class="page" href="teams.html">TEAMS</a>
+                <div class="dropdown">
+                    <a class="dropbtn page" href="scheduleLEC.html">SCHEDULE</a>
+                    <div class="dropdown-content">
+                        <a href="scheduleLEC.html">LEC</a>
+                        <a href="scheduleLCS.html">LCS</a>
+                        <a href="scheduleLCK.html">LCK</a>
+                        <a href="scheduleLPL.html">LPL</a>
+                    </div>
+                </div>
+
+                <a class="page" href="standings.html">STANDINGS</a>
+                <a class="page" href="about.html">ABOUT</a>
+                
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <div class="header">
+        <br>
+        <h1 class="latestcontent"> LATEST CONTENT </h1>
+        
+    </div>
+    <div class="Container">
+        <div class="Content">
+            <div class="Content-left">
+                <div class="ContentBlock">
+                    <a class="BackgroundImage" href="MyPicks.html">
+                        <img src="images/best_teams2.jpg" class="BackgroundImage">
+                        <Pre class="ImageTitle">MAKE YOUR PICKS FOR THE 2021 SPRING SPLIT</Pre>
+                    </a>
+                </div> <br>
+                <div class="ContentBlock">
+                    <a class="BackgroundImage" href="rekkles.html">
+                        <img src="images/Rekkles.jpg" class="BackgroundImage">
+                        <Pre class="ImageTitle">Rekkles officially joins G2 Esports <br>for 2021 LEC season</Pre>
+                    </a>
+                </div>
+            </div>
+            <div class="Content-middle">
+                <div class="ContentBlock">
+                    <a class="BackgroundImage" href="perkz.html">
+                        <img src="images/Screenshot-2020-11-12-183108.jpg" class="BackgroundImage">
+                        <Pre class="ImageTitle">LEC superstar Perkz officially joins Cloud9</Pre>
+                    </a>
+                </div> <br>
+                <div class="ContentBlock">
+                    <a class="BackgroundImage" href="viego.html">
+                        <img src="images/viegos-abilities-a-full-breakdown-1610393730.jpg" class="BackgroundImage">
+                        <Pre class="ImageTitle">The release of Viego, The Ruined King</Pre>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="Content-right">
+            <h1 class="recenttext">Recent results</h1>
+            <br>
+            <table class="results">
+                <tr class="resultsLEC">
+                    <th>
+                        <img src="images\LEC\G2-Logo.png">
+                    </th>
+                    <th>
+                        <h3>3-0</h3>
+                    </th>
+                    <th>
+                        <img src="images\LEC\FNC-Logo.png">
+                    </th>
+                </tr>
+                <tr class="resultsLCS">
+                    <th>
+                        <img src="images\LCS\FLY-Logo.png">
+                    </th>
+                    <th>
+                        <h3>2-3</h3>
+                    </th>
+                    <th>
+                        <img src="images\LCS\TSM-Logo.png">
+                    </th>
+                </tr>
+                <tr class="resultsLCS">
+                    <th>
+                        <img src="images\LCS\TSM-Logo.png">
+                    </th>
+                    <th>
+                        <h3>3-2</h3>
+                    </th>
+
+                    <th>
+                        <img src="images\LCS\TL-Logo.png">
+                    </th>
+                </tr>
+                <tr>
+                    <td colspan="3" class="morebtn" id="morebtn">Show More</td>
+                </tr>
+                <tbody class="less">
+                    <tr class="resultsLEC">
+                        <th>
+                            <img src="images\LEC\Rogue-Logo.png">
+                        </th>
+                        <th>
+                            <h3>2-3</h3>
+                        </th>
+                        <th>
+                            <img src="images\LEC\G2-Logo.png">
+                        </th>
+                    </tr>
+                    <tr class="resultsLCK">
+                        <th>
+                            <img src="images\LCK\DWG-Logo.png">
+                        </th>
+                        <th>
+                            <h3>0-3</h3>
+                        </th>
+                        <th>
+                            <img src="images\LCK\KDX-Logo.png">
+                        </th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <footer>
+        <div class="FooterClass">
+            <img height="30px" src="images/riot.png" style="float: left;">
+
+            <img height="30px" src="images/leagueoflegendssucks.png" style="float: left;">
+
+            <p style="margin-left: 85%; color: white;"> © NICK FURY All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Standings</title>
+    <link rel="stylesheet" href="css/navBar.css">
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/standings.css">
+    <link rel="icon" href="images/logo1.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</head>
+
+<body style="background-color:rgb(0, 20, 26);" onload="LEC()">
+    <!-- -->
+    <header>
+
+
+        <nav>
+            <div class="logo">
+
+            </div>
+            <div class=" navButtons" id="myNavButtons">
+                <a href="index.html"><img height="75px" src="images\LoL Logo.png"></a>
+                <a class="page" href="index.html">HOME</a>
+                <a class="page" href="news.html">NEWS</a>
+                <a class="page" href="teams.html">TEAMS</a>
+                <div class="dropdown">
+                    <a class="dropbtn page" href="scheduleLEC.html">SCHEDULE</a>
+                    <div class="dropdown-content">
+                        <a href="scheduleLEC.html">LEC</a>
+                        <a href="scheduleLCS.html">LCS</a>
+                        <a href="scheduleLCK.html">LCK</a>
+                        <a href="scheduleLPL.html">LPL</a>
+                    </div>
+                </div>
+
+                <a class="page" href="standings.html">STANDINGS</a>
+                <a class="page" href="about.html">ABOUT</a>
+
+            </div>
+            
+            
+        </nav>
+        <br>
+       <div><h1 class="standingstext"> STANDINGS </h1></div>
+        <main class="Standings" id="Standings">
+            <div id="ButtonCon" class="button">
+                <button class="btn" onclick="LEC()"> <img src="images/EULCS.png" style="max-width: 60px;"> </button>
+                <button class="btn" onclick="LCS()"> <img src="images\LCS\LCS-Logo.png"> </button>
+                <button class="btn" onclick="LCK()"> <img src="images\LCK\LCK-Logo.png"> </button>
+                <button class="btn" onclick="LPL()"> <img src="images\LPL\LPL-Logo.png"> </button>
+            </div>
+            <div id='LEC'>
+                <table class="standingcss">
+                    <tr>
+                        <hr width="80%">
+                    </tr>
+                    <tr>
+                        <th>1.</th>
+                        <th> <img src="images\LEC\Rogue-Logo.png"> </th>
+                        <th>Rogue</th>
+                        <th>13W-5L</th>
+                    </tr>
+                    <tr>
+                        <th>2.</th>
+                        <th> <img src="images\LEC\Mad-Lions-Logo.png"> </th>
+                        <th>Mad Lions</th>
+                        <th>12W-6L</th>
+                    </tr>
+                    <tr>
+                        <th>3.</th>
+                        <th> <img src="images\LEC\G2-Logo.png"> </th>
+                        <th>G2 Esports</th>
+                        <th>11W-7L</th>
+                    </tr>
+                    <tr>
+                        <th>4.</th>
+                        <th> <img src="images\LEC\FNC-Logo.png"> </th>
+                        <th>Fnatic</th>
+                        <th>9W-9W</th>
+                    </tr>
+                    <tr>
+                        <th>5.</th>
+                        <th> <img src="images\LEC\SK-Logo.png"> </th>
+                        <th>SK Gaming</th>
+                        <th>9W-9W</th>
+                    </tr>
+                    <tr>
+                        <th>6.</th>
+                        <th> <img src="images\LEC\S04-Logo.png"> </th>
+                        <th>Schalke 04</th>
+                        <th>8W-10L</th>
+                    </tr>
+                    <tr>
+                        <th>7.</th>
+                        <th> <img src="images\LEC\XL-Logo.png"> </th>
+                        <th>Excel Esports</th>
+                        <th>8W-10L</th>
+                    </tr>
+                    <tr>
+                        <th>8.</th>
+                        <th> <img src="images\LEC\MSF-Logo.png"> </th>
+                        <th>Misfits Gaming</th>
+                        <th>7W-11W</th>
+                    </tr>
+                    <tr>
+                        <th>9.</th>
+                        <th> <img src="images\LEC\VIT-Logo.png"> </th>
+                        <th>Team Vitality</th>
+                        <th>7W-11L</th>
+                    </tr>
+                    <tr>
+                        <th>10.</th>
+                        <th> <img src="images\LEC\Astralis-Logo.png"> </th>
+                        <th>Astralis</th>
+                        <th>6W-12L</th>
+                    </tr>
+                </table>
+                <hr width="80%">
+            </div>
+            <div id='LCS'>
+                <table class="standingcss">
+                    <tr>
+                        <hr width="80%">
+                    </tr>
+                    <tr>
+                        <th>1.</th>
+                        <th> <img src="images\LCS\TL-Logo.png"> </th>
+                        <th>Team Liquid</th>
+                        <th>15W-3L</th>
+                    </tr>
+                    <tr>
+                        <th>2.</th>
+                        <th> <img src="images\LCS\C9-Logo.png"> </th>
+                        <th>Cloud9</th>
+                        <th>13W-5L</th>
+                    </tr>
+                    <tr>
+                        <th>3.</th>
+                        <th> <img src="images\LCS\FLY-Logo.png"> </th>
+                        <th>FlyQuest</th>
+                        <th>12W-6L</th>
+                    </tr>
+                    <tr>
+                        <th>4.</th>
+                        <th> <img src="images\LCS\TSM-Logo.png"> </th>
+                        <th>TSM</th>
+                        <th>12W-6L</th>
+                    </tr>
+                    <tr>
+                        <th>5.</th>
+                        <th> <img src="images\LCS\GG-Logo.png"> </th>
+                        <th>GG</th>
+                        <th>9W-9LL</th>
+                    </tr>
+                    <tr>
+                        <th>6.</th>
+                        <th> <img src="images\LCS\EG-Logo.png"> </th>
+                        <th>EG</th>
+                        <th>8W-10L</th>
+                    </tr>
+                    <tr>
+                        <th>7.</th>
+                        <th> <img src="images\LCS\DIG-Logo.png"> </th>
+                        <th>Dignitas</th>
+                        <th>6W-13L</th>
+                    </tr>
+                    <tr>
+                        <th>8.</th>
+                        <th> <img src="images\LCS\100T-Logo.png"> </th>
+                        <th>100T</th>
+                        <th>7W-11L</th>
+                    </tr>
+                    <tr>
+                        <th>9.</th>
+                        <th> <img src="images\LCS\CLG-Logo.png"> </th>
+                        <th>CLG</th>
+                        <th>5W-14L</th>
+                    </tr>
+                    <tr>
+                        <th>10.</th>
+                        <th> <img src="images\LCS\IMT-Logo.png"> </th>
+                        <th>Immortals</th>
+                        <th>4W-14L</th>
+                    </tr>
+                </table>
+                <hr width="80%">
+                </tr>
+            </div>
+            <div id='LCK'>
+                <table class="standingcss">
+                    <hr width="80%">
+                    <tr>
+                        <th>1.</th>
+                        <th> <img src="images\LCK\DWG-Logo.png"> </th>
+                        <th>DAMWON Gaming</th>
+                        <th>16W-2L</th>
+                    </tr>
+                    <tr>
+                        <th>2.</th>
+                        <th> <img src="images\LCK\KDX-Logo.png"> </th>
+                        <th>DRX</th>
+                        <th>15W-3L</th>
+                    </tr>
+                    <tr>
+                        <th>3.</th>
+                        <th> <img src="images\LCK\GENG-Logo.png"> </th>
+                        <th>GEN.G</th>
+                        <th>14W-4L</th>
+                    </tr>
+                    <tr>
+                        <th>4.</th>
+                        <th> <img src="images\LCK\T1-Logo.png"> </th>
+                        <th>T1</th>
+                        <th>13W-5L</th>
+                    </tr>
+                    <tr>
+                        <th>5.</th>
+                        <th> <img src="images\LCK\AFF-Logo.png"> </th>
+                        <th>Afreeca Freecs</th>
+                        <th>10W-8L</th>
+                    </tr>
+                    <tr>
+                        <th>6.</th>
+                        <th> <img src="images\LCK\KTR-Logo.png"> </th>
+                        <th>kt Rolster</th>
+                        <th>7W-11L</th>
+                    </tr>
+                    <tr>
+                        <th>7.</th>
+                        <th> <img src="images\LCK\SBG-Logo.png"> </th>
+                        <th>SANDBOX Gaming</th>
+                        <th>7W-11L</th>
+                    </tr>
+                    <tr>
+                        <th>8.</th>
+                        <th> <img src="images\LCK\TDE-Logo.png"> </th>
+                        <th>Team Dynamics</th>
+                        <th>5W-13L</th>
+                    </tr>
+                    <tr>
+                        <th>9.</th>
+                        <th> <img src="images\LCK\HWE.png"> </th>
+                        <th>HLE</th>
+                        <th>2W-16L</th>
+                    </tr>
+                    <tr>
+                        <th>10.</th>
+                        <th> <img src="images\LCK\SHOP-Logo.png"> </th>
+                        <th>SOP</th>
+                        <th>1W-17L</th>
+                    </tr>
+                </table>
+                <hr width="80%">
+            </div>
+            <div id='LPL'>
+                <table class="standingcss">
+                    <hr width="80%">
+                    <tr>
+                        <th>1.</th>
+                        <th> <img src="images\LPL\TES-Logo.png"> </th>
+                        <th>Top Esports</th>
+                        <th>13W-3L</th>
+                    </tr>
+                    <tr>
+                        <th>2.</th>
+                        <th> <img src="images\LPL\JDGaming.png"> </th>
+                        <th>JD Gaming</th>
+                        <th>13W-3L</th>
+                    </tr>
+                    <tr>
+                        <th>3.</th>
+                        <th> <img src="images\LPL\IG-Logo.png"> </th>
+                        <th>Invictus Gaming</th>
+                        <th>12W-4L</th>
+                    </tr>
+                    <tr>
+                        <th>4.</th>
+                        <th> <img src="images\LPL\Suning-Logo.png"> </th>
+                        <th>Suning</th>
+                        <th>12W-4L</th>
+                    </tr>
+                    <tr>
+                        <th>5.</th>
+                        <th> <img src="images\LPL\VictoryFive-Logo.png"> </th>
+                        <th>Victory Five</th>
+                        <th>11W-5L</th>
+                    </tr>
+                    <tr>
+                        <th>6.</th>
+                        <th> <img src="images\LPL\LGD-Logo.png"> </th>
+                        <th>LGD Gaming</th>
+                        <th>10W-6L</th>
+                    </tr>
+                    <tr>
+                        <th>7.</th>
+                        <th> <img src="images\LPL\TeamWE-Logo.png"> </th>
+                        <th>Team WE</th>
+                        <th>9W-7L</th>
+                    </tr>
+                    <tr>
+                        <th>8.</th>
+                        <th> <img src="images\LPL\FPX-Logo.png"> </th>
+                        <th>FPX</th>
+                        <th>9W-7L</th>
+                    </tr>
+                    <tr>
+                        <th>9.</th>
+                        <th> <img src="images\LPL\RNG-Logo.png"> </th>
+                        <th>RNG</th>
+                        <th>8W-8L</th>
+                    </tr>
+                    <tr>
+                        <th>10.</th>
+                        <th> <img src="images\LPL\EdwardGaming-Logo.png"> </th>
+                        <th>EDG</th>
+                        <th>8W-8L</th>
+                    </tr>
+                    <tr>
+                        <th>11.</th>
+                        <th> <img src="images\LPL\ViciGaming-Logo.png"> </th>
+                        <th>Vici Gaming</th>
+                        <th>8W-8L</th>
+                    </tr>
+                    <tr>
+                        <th>12.</th>
+                        <th> <img src="images\LPL\BiliBili-Logo.png"> </th>
+                        <th>BLG</th>
+                        <th>6W-10L</th>
+                    </tr>
+                    <tr>
+                        <th>13.</th>
+                        <th> <img src="images\LPL\LNGEsports-Logo.png"> </th>
+                        <th>LNG</th>
+                        <th>5W-11L</th>
+                    </tr>
+                    <tr>
+                        <th>14.</th>
+                        <th> <img src="images\LPL\OMG-Logo.png"> </th>
+                        <th>OMG</th>
+                        <th>4W-12L</th>
+                    </tr>
+                    <tr>
+                        <th>15.</th>
+                        <th> <img src="images\LPL\rogue-Logo.png"> </th>
+                        <th>Rogue</th>
+                        <th>4W-12L</th>
+                    </tr>
+                    <tr>
+                        <th>16.</th>
+                        <th> <img src="images\LPL\Estar-Logo.png"> </th>
+                        <th>eStar</th>
+                        <th>3W-13L</th>
+                    </tr>
+                    <tr>
+                        <th>17.</th>
+                        <th> <img src="images\LPL\DominusEsports-Logo.png"> </th>
+                        <th>DME</th>
+                        <th>1W-15L</th>
+                    </tr>
+                </table>
+                <hr width="80%">
+            </div>
+        </main>
+    </header>
+<footer>
+        <div class="FooterClass">
+            <img height="30px" src="images/riot.png" style="float: left;">
+            
+            <img height="30px" src="images/leagueoflegendssucks.png" style="float: left;">
+            
+            <p style="margin-left: 85%; color: white;"> © NEXUS All rights reserved.</p>
+        </div>
+</footer>
+    <script>
+        var x = document.getElementById('LEC');
+        var y = document.getElementById('LCS');
+        var z = document.getElementById('LCK');
+        var v = document.getElementById('LPL');
+
+        function LEC() {
+            x.style.display = 'block';
+            y.style.display = 'none';
+            z.style.display = 'none';
+            v.style.display = 'none';
+            document.body.style.backgroundImage = "url('images/StandingsBG/LEC.png')";
+            document.body.style.backgroundRepeat = "no-repeat";
+            document.body.style.backgroundSize = "cover";
+        }
+        function LCS() {
+            x.style.display = 'none';
+            y.style.display = 'block';
+            z.style.display = 'none';
+            v.style.display = 'none';
+            document.body.style.backgroundImage = "url('images/StandingsBG/LCS.png')";
+            document.body.style.backgroundRepeat = "no-repeat";
+            document.body.style.backgroundSize = "cover";
+        }
+        function LCK() {
+            x.style.display = 'none';
+            y.style.display = 'none';
+            z.style.display = 'block';
+            v.style.display = 'none';
+            document.body.style.backgroundImage = "url('images/StandingsBG/LCK.png')";
+            document.body.style.backgroundRepeat = "no-repeat";
+            document.body.style.backgroundSize = "cover";
+        }
+        function LPL() {
+            x.style.display = 'none';
+            y.style.display = 'none';
+            z.style.display = 'none';
+            v.style.display = 'block';
+            document.body.style.backgroundImage = "url('images/StandingsBG/LPL.png')";
+            document.body.style.backgroundRepeat = "no-repeat";
+            document.body.style.backgroundSize = "cover";
+        }
+    </script>
+
+</body>
+
+</html>
